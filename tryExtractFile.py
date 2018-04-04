@@ -11,9 +11,3 @@ for file in os.listdir(filedir):
                t.extractall(outdir)
             except:
                 print(filedir+"/"+file)
-    #print(os.listdir(outdir))
-
-
-
-# with tarfile.open(filedir, 'r') as t:
-#     t.extractall(outdir)
