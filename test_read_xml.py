@@ -1,7 +1,7 @@
 import os
 import xml.dom.minidom as minidom
 
-filedir = os.getcwd()+"/"+"/"+"files"+"/"+"A"+"/"+"A01"
+filedir = os.getcwd()+"/"+"files"+"/"+"A"+"/"+"A00"
 
 def getText(nodelist):                  # always need to pass a list of node elements
     rc = []
