@@ -2,4 +2,4 @@ files
 .DS_Store
 __pycache__
 graph_learn.ipynb
-rake-nl
+rake-nltk
