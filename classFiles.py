@@ -1,4 +1,4 @@
-import read_xml
+from read_xml import Read_XML
 class Author:
     def __init__(self,author_id,author_name):
         self.author_id = author_id
@@ -20,3 +20,4 @@ class Paper:
         self.authors = authors
         self.topics = topics
         self.papers = papers
+        self.read_xml_obj = Read_XML(file)
