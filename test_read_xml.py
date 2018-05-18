@@ -1,7 +1,7 @@
 import os
 import xml.dom.minidom as minidom
 
-filedir = os.getcwd()+"/"+"/"+"files"+"/"+"A"+"/"+"A01"
+filedir = os.getcwd()+"/"+"files"+"/unzipped"
 
 def getText(nodelist):                  # always need to pass a list of node elements
     rc = []
@@ -50,19 +50,22 @@ i = 0
 files = []
 for file in os.listdir(filedir):
     i = i+1
-    doc = minidom.parse(filedir + "/" + file)
-    Elems = doc.getElementsByTagName('algorithm')
-    for Elem in Elems:
-        if Elem.getAttribute("name") == "ParsHed":
-            title = Elem.getElementsByTagName("title")
-            if len(title) == 1:
-                print(file)
-                print("\n")
-                parseHeading(Elem)
-            else:
-                files.append(file)
-                break
-        parseCitations(Elem)
+    try:
+        doc = minidom.parse(filedir + "/" + file)
+        Elems = doc.getElementsByTagName('algorithm')
+        for Elem in Elems:
+            if Elem.getAttribute("name") == "ParsHed":
+                title = Elem.getElementsByTagName("title")
+                if len(title) == 1:
+                    print(file)
+                    print("\n")
+                    parseHeading(Elem)
+                else:
+                    files.append(file)
+                    break
+            parseCitations(Elem)
+    except:
+        print(file)
 
 
 print(i)
