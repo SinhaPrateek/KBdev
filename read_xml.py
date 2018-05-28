@@ -46,6 +46,41 @@ class Read_XML:
                     print("\n")
                     print(self.getText(abstract))
 
+    def getTitle(self):
+        if self.parseable() == "parseable":
+            for Elem in self.Elems:
+                if Elem.getAttribute("name") == "ParsHed":
+                    title = Elem.getElementsByTagName("title")
+                    return self.getText(title)
+
+    def getAuthors(self):
+        if self.parseable() == "parseable":
+            for Elem in self.Elems:
+                if Elem.getAttribute("name") == "ParsHed":
+                    author = Elem.getElementsByTagName("author")
+                    return self.getText(author)
+
+    def getAbstract(self):
+        def getTitle(self):
+            if self.parseable() == "parseable":
+                for Elem in self.Elems:
+                    if Elem.getAttribute("name") == "ParsHed":
+                        abstract = Elem.getElementsByTagName("abstract")
+                        return self.getText(abstract).split("|")
+
+    def getCitationTitle(self):
+        if self.parseable() == "parseable":
+            for Elem in self.Elems:
+                if Elem.getAttribute("name") == "ParsCit":
+                    citations = Elem.getElementsByTagName('citation')
+                    citTitle = []
+                    for citation in citations:
+                        cit_title = citation.getElementsByTagName("title")
+                        citTitle.append(self.getText(cit_title))
+                    return citTitle
+
+
+
     def parseable(self):
         for Elem in self.Elems:
             if Elem.getAttribute("name") == "ParsHed":
