@@ -80,7 +80,6 @@ class Read_XML:
                     return citTitle
 
 
-
     def parseable(self):
         for Elem in self.Elems:
             if Elem.getAttribute("name") == "ParsHed":
