@@ -1,17 +1,19 @@
 import os
 import xml.dom.minidom as minidom
 import spacy
-
+from collections import OrderedDict
 import math
 from textblob import TextBlob as tb
 ################ https://stevenloria.com/tf-idf/
 
+################## CHANGE THE DIRECTORY AS NEEDED ################################
 nlp = spacy.load('en')
-filedir = os.getcwd()+"/"+"files"+"/"+"unzipped"
+filedir = os.getcwd()+"/"+"files"+"/"+"test_directory"
 f = open('text_corpus.txt','w')
+f = open('topic_output.txt','w')
 
 
-#get the data from elements
+#get the data from elements like authors,abstract
 def getText(nodelist):                  # always need to pass a list of node elements
     rc = []
     for node in nodelist:               # nodelist - [<DOM Element: title at 0x105fc7340>], node - <DOM Element: title at 0x105fc7340>
@@ -33,9 +35,11 @@ def parseHeading(Elem):
 
 
 
-i = 0
-files = []
-documents = []
+i = 0       ### this is for counting the number of files read
+files = []  ### list of discarded files
+
+
+documents = []   ### whole corpus made of abstracts for now (List od docs) ['A major obstacle','to the construction',...] i.e. [doc1,doc2,doc3]
 for file in os.listdir(filedir):
     i = i+1
     try:
@@ -56,12 +60,16 @@ for file in os.listdir(filedir):
         print(file)
 
 
-print(i)     ### rinting count of total read files
+print(i)     ### printing count of total read files
 print(files)   ## printing discarded files
 # print("-----------------------")
 # print("-----------------------")
 # print(documents)
 
+
+
+###################### Above steps were to create a corpus of documents in format [doc1,doc2,.....] ,
+###################### now we will use it to find tfidf scores of noun chunks produced from Spacy
 
 def tf(word, blob):
     return blob.words.count(word) / len(blob.words)
@@ -78,29 +86,33 @@ def tfidf(word, blob, bloblist):
 
 for doc in documents:
     print(str(doc))
+    f.write(str(doc)+"\n")
+    chunk_score_dict = {}
     text_spacy = nlp(str(doc))
     for chunk in text_spacy.noun_chunks:
         chunk_text_blob = tb(chunk.text)
         score = 0
         for word in chunk_text_blob.words:
             score = score + tfidf(word, doc, documents)
-        print(chunk.text + " : " + str(score))
-        print("-----------------------")
+        # print(chunk.text + " : " + str(score))
+        chunk_score_dict[score] = chunk.text
+        # print("-----------------------")
+
+    # chunk_score_tuple = [(k, v) for k, v in chunk_score_dict.items()]
+    # chunk_score_tuple.sort()
+    #
+    # for item in chunk_score_tuple:
+    #     print(str(item[0]) + " : " + str(item[1]))
+    ordered = OrderedDict(sorted(chunk_score_dict.items()))
+    for key, value in ordered.items():
+        print("%s: %s" % (key, value))
+        f.write("%s: %s \n" % (key, value))
+
     print("-----------------------")
     print("-----------------------")
     print("-----------------------")
+    f.write("-----------------------"+ "\n")
 
 
-#
-#
-#
-#
-#
-# for i, blob in enumerate(documents):
-#     print("Top words in document {}".format(i + 1))
-#     scores = {word: tfidf(word, blob, documents) for word in blob.words}
-#     sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-#     for word, score in sorted_words[:3]:
-#         print("\tWord: {}, TF-IDF: {}".format(word, round(score, 5)))
 
 
