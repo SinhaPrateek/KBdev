@@ -1,8 +1,8 @@
 import xml.dom.minidom as minidom
 
 class Read_XML:
-    def __init__(self,file):
-        self.doc = minidom.parse(file)
+    def __init__(self,file_path):
+        self.doc = minidom.parse(file_path)
         self.Elems = self.doc.getElementsByTagName('algorithm')
 
     def getText(self,nodelist):                  # always need to pass a list of node elements
@@ -58,14 +58,14 @@ class Read_XML:
             for Elem in self.Elems:
                 if Elem.getAttribute("name") == "ParsHed":
                     author = Elem.getElementsByTagName("author")
-                    return self.getText(author)
+                    return self.getText(author).split("|")
 
     def getAbstract(self):
         if self.parseable() == "parseable":
             for Elem in self.Elems:
                 if Elem.getAttribute("name") == "ParsHed":
                     abstract = Elem.getElementsByTagName("abstract")
-                    return self.getText(abstract).split("|")
+                    return self.getText(abstract)
 
     def getCitationTitle(self):
         if self.parseable() == "parseable":

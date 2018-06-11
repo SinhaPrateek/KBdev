@@ -43,7 +43,7 @@ Title_value = 0
 Author_value = 0
 
 for file in os.listdir(flattened_files_dir):
-    read_xml_obj = Read_XML(file)
+    read_xml_obj = Read_XML(flattened_files_dir+"/"+file)
     if read_xml_obj.parseable() == "parseable":
         Title = read_xml_obj.getTitle()
         Author_list = read_xml_obj.getAuthors()
@@ -62,7 +62,7 @@ pickle.dump(Author_dict,Author_dict_pickle)
 Title_dict_pickle.close()
 Author_dict_pickle.close()
 
-# Formong and Saving DBJSON
+# Forming and Saving DBJSON
 
 
 intermediate_output_file.close()

@@ -1,5 +1,4 @@
 import os
-import xml.dom.minidom as minidom
 import spacy
 from collections import OrderedDict
 import math
@@ -11,13 +10,8 @@ from read_xml import Read_XML
 ################## CHANGE THE DIRECTORY AS NEEDED ################################
 nlp = spacy.load('en')
 filedir = os.getcwd()+"/"+"files"+"/"+"test_directory"
-corpus = open('text_corpus.txt','w')
-f = open('topic_output.txt','w')
-
-
-
-
-
+corpus = open(os.getcwd()+"/"+"files"+"/"+'text_corpus.txt','w')
+f = open(os.getcwd()+"/"+"files"+"/"+'topic_output.txt','w')
 
 
 i = 0       ### this is for counting the number of files read
@@ -28,7 +22,7 @@ documents = []   ### whole corpus made of abstracts for now (List od docs) ['A m
 for file in os.listdir(filedir):
     i = i+1
     try:
-        read_xml_obj = Read_XML(file)
+        read_xml_obj = Read_XML(filedir+"/"+file)
         if read_xml_obj.parseable() == "parseable":
             documents.append(tb(read_xml_obj.getAbstract())) # convert to TextBlob object before appending
             corpus.write(read_xml_obj.getAbstract()+"\n")    # writing to file text_corpus.txt
@@ -36,6 +30,7 @@ for file in os.listdir(filedir):
             files.append(file)
     except:
         print(file)
+
 
 
 print(i)     ### printing count of total read files
