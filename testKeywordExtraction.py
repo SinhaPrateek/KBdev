@@ -4,34 +4,19 @@ import spacy
 from collections import OrderedDict
 import math
 from textblob import TextBlob as tb
+from read_xml import Read_XML
+
 ################ https://stevenloria.com/tf-idf/
 
 ################## CHANGE THE DIRECTORY AS NEEDED ################################
 nlp = spacy.load('en')
 filedir = os.getcwd()+"/"+"files"+"/"+"test_directory"
-f = open('text_corpus.txt','w')
+corpus = open('text_corpus.txt','w')
 f = open('topic_output.txt','w')
 
 
-#get the data from elements like authors,abstract
-def getText(nodelist):                  # always need to pass a list of node elements
-    rc = []
-    for node in nodelist:               # nodelist - [<DOM Element: title at 0x105fc7340>], node - <DOM Element: title at 0x105fc7340>
-        onenodelist = node.childNodes   # onenodelist - [<DOM Text node "'The Effici'...">] "childNodes convert single Element obj to a single list of Textnode"
-        for onenode in onenodelist:
-            if onenode.nodeType == node.TEXT_NODE:
-                rc.append(onenode.data)
-    return '|'.join(rc)
 
-#parse xml to get abstract and save to documents list of TextBlob objects one element for each file's abstract for now, should include title also
-def parseHeading(Elem):
-    if Elem.getAttribute("name") == "ParsHed":
-        title = Elem.getElementsByTagName("title")
-        author = Elem.getElementsByTagName("author")
-        abstract = Elem.getElementsByTagName("abstract")
-        # print(getText(abstract))
-        documents.append(tb(getText(abstract)))   # convert to TextBlob object before appending
-        f.write(getText(abstract)+",")             # writing to file text_corpus.txt
+
 
 
 
@@ -43,28 +28,19 @@ documents = []   ### whole corpus made of abstracts for now (List od docs) ['A m
 for file in os.listdir(filedir):
     i = i+1
     try:
-        doc = minidom.parse(filedir + "/" + file)
-        Elems = doc.getElementsByTagName('algorithm')
-        for Elem in Elems:
-            if Elem.getAttribute("name") == "ParsHed":
-                title = Elem.getElementsByTagName("title")
-                if len(title) == 1:
-                    # print(file)
-                    # print("\n")
-                    parseHeading(Elem)
-                else:
-                    files.append(file)    ### for discarding vague files
-                    break
-            parseHeading(Elem)
+        read_xml_obj = Read_XML(file)
+        if read_xml_obj.parseable() == "parseable":
+            documents.append(tb(read_xml_obj.getAbstract())) # convert to TextBlob object before appending
+            corpus.write(read_xml_obj.getAbstract()+"\n")    # writing to file text_corpus.txt
+        else:
+            files.append(file)
     except:
         print(file)
 
 
 print(i)     ### printing count of total read files
 print(files)   ## printing discarded files
-# print("-----------------------")
-# print("-----------------------")
-# print(documents)
+
 
 
 

@@ -61,12 +61,11 @@ class Read_XML:
                     return self.getText(author)
 
     def getAbstract(self):
-        def getTitle(self):
-            if self.parseable() == "parseable":
-                for Elem in self.Elems:
-                    if Elem.getAttribute("name") == "ParsHed":
-                        abstract = Elem.getElementsByTagName("abstract")
-                        return self.getText(abstract).split("|")
+        if self.parseable() == "parseable":
+            for Elem in self.Elems:
+                if Elem.getAttribute("name") == "ParsHed":
+                    abstract = Elem.getElementsByTagName("abstract")
+                    return self.getText(abstract).split("|")
 
     def getCitationTitle(self):
         if self.parseable() == "parseable":
