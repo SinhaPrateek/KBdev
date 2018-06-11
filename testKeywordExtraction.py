@@ -9,7 +9,7 @@ from read_xml import Read_XML
 
 ################## CHANGE THE DIRECTORY AS NEEDED ################################
 nlp = spacy.load('en')
-filedir = os.getcwd()+"/"+"files"+"/"+"test_directory"
+filedir = os.getcwd()+"/"+"files"+"/"+"Anew"
 corpus = open(os.getcwd()+"/"+"files"+"/"+'text_corpus.txt','w')
 f = open(os.getcwd()+"/"+"files"+"/"+'topic_output.txt','w')
 
@@ -25,7 +25,9 @@ for file in os.listdir(filedir):
         read_xml_obj = Read_XML(filedir+"/"+file)
         if read_xml_obj.parseable() == "parseable":
             documents.append(tb(read_xml_obj.getAbstract())) # convert to TextBlob object before appending
+            corpus.write(file+"\n")
             corpus.write(read_xml_obj.getAbstract()+"\n")    # writing to file text_corpus.txt
+            corpus.write("----------------------------"+"\n")
         else:
             files.append(file)
     except:

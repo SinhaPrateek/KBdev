@@ -83,7 +83,8 @@ class Read_XML:
         for Elem in self.Elems:
             if Elem.getAttribute("name") == "ParsHed":
                 title = Elem.getElementsByTagName("title")
-                if len(title) == 1:
+                abstract = Elem.getElementsByTagName("abstract")
+                if len(title) == 1 & len(abstract) == 1:
                     return "parseable"
                 else:
                     return "not_parseable"
