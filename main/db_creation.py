@@ -1,7 +1,8 @@
-import pickle
 import os
-from read_xml import Read_XML
+import pickle
 import tarfile
+
+from main.read_xml import Read_XML
 
 filedir = os.getcwd()+ "/" + "files" + "/" + "archives/acl-arc-160301-parscit"
 unzipped_dir = os.getcwd()+ "/" + "files" + "/" + "unzipped"

@@ -1,5 +1,8 @@
-import requests, bs4
-import bibtex
+import bs4
+import requests
+
+from test_directory import bibtex
+
 res = requests.get('http://aclanthology.info/events/acl-2016')
 try:
     res.raise_for_status()

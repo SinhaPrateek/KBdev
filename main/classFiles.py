@@ -1,4 +1,4 @@
-from read_xml import Read_XML
+from main.read_xml import Read_XML
 class Author:
     def __init__(self,author_id,author_name):
         self.author_id = author_id

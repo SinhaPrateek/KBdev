@@ -1,9 +1,11 @@
-import os
-import spacy
-from collections import OrderedDict
 import math
+import os
+from collections import OrderedDict
+
+import spacy
 from textblob import TextBlob as tb
-from read_xml import Read_XML
+
+from main.read_xml import Read_XML
 
 ################ https://stevenloria.com/tf-idf/
 
