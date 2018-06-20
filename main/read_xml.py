@@ -84,7 +84,7 @@ class Read_XML:
             if Elem.getAttribute("name") == "ParsHed":
                 title = Elem.getElementsByTagName("title")
                 abstract = Elem.getElementsByTagName("abstract")
-                if len(title) == 1 & len(abstract) == 1:
+                if len(title) == 1 and len(abstract) == 1:
                     return "parseable"
                 else:
                     return "not_parseable"
