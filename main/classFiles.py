@@ -1,4 +1,3 @@
-from main.read_xml import Read_XML
 class Author:
     def __init__(self,author_id,author_name):
         self.author_id = author_id
@@ -15,9 +14,8 @@ class Topic:
         self.topic = topic_name
 
 class Paper:
-    def __int__(self,title,authors,topics,papers):
-        self.title = title
-        self.authors = authors
-        self.topics = topics
-        self.papers = papers
-        self.read_xml_obj = Read_XML(file)
+    def __init__(self,title_id,authors_id,topics_id,cit_paper_id):
+        self.title = title_id
+        self.authors = authors_id
+        self.topics = topics_id
+        self.citpapers = cit_paper_id

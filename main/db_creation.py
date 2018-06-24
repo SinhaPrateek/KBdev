@@ -7,6 +7,7 @@ from collections import OrderedDict
 import spacy
 from textblob import TextBlob as tb
 
+from main.classFiles import Paper
 from main.read_xml import Read_XML
 
 filedir = os.getcwd()+ "/" + "files" + "/" + "archives/acl-arc-160301-parscit"
@@ -18,6 +19,7 @@ Author_dict_pickle = open(os.getcwd()+ "/" + "files" + "/author_dict.pickle",'wb
 Topic_dict_pickle = open(os.getcwd()+ "/" + "files" + "/topic_dict.pickle",'wb')
 Title_file_dict_pickle = open(os.getcwd()+ "/" + "files" + "/title_file_dict.pickle",'wb')
 File_topic_dict_pickle = open(os.getcwd()+ "/" + "files" + "/file_topic_dict.pickle",'wb')
+
 intermediate_output_file.write("unextracted files:" + "/n")
 
 # Unzipping the file
@@ -89,7 +91,7 @@ for file in os.listdir(flattened_files_dir):
             j = j+1
         File_topic_dict[file] = topic
 
-# Forming dictionary
+# Forming dictionary and saving them in pickle format
 Title_dict = {}
 Author_dict = {}
 Topic_dict = {}
@@ -107,13 +109,13 @@ for file in os.listdir(flattened_files_dir):
         Title = read_xml_obj.getTitle()
         Author_list = read_xml_obj.getAuthors()
         Topic_list = File_topic_dict[file]
-        Title_dict[Title] = Title_dict.get(Title,Title_value)
+        Title_dict[Title] = Title_dict.get(Title,str(Title_value)+"Ti")                                 # Title dictionary creation
         Title_value = Title_value+1
         for author in Author_list:
-            Author_dict[author] = Author_dict.get(author,Author_value)
+            Author_dict[author] = Author_dict.get(author,str(Author_value)+"Au")                        # Author dictionary creation
             Author_value = Author_value + 1
         for topic in Topic_list:
-            Topic_dict[topic] = Topic_dict.get(topic,Topic_value)
+            Topic_dict[topic] = Topic_dict.get(topic,str(Topic_value)+"To")                             # Topic dictionary creation
             Topic_value = Topic_value + 1
         Title_file_dict[Title] = file
     else:
@@ -132,6 +134,20 @@ Title_file_dict_pickle.close()
 File_topic_dict_pickle.close()
 
 # Forming and Saving DBJSON
+for file in os.listdir(flattened_files_dir):
+    read_xml_obj = Read_XML(flattened_files_dir+"/"+file)
+    if read_xml_obj.parseable() == "parseable":
+        Title = read_xml_obj.getTitle()
+        Author_list = read_xml_obj.getAuthors()
+        Topic_list = File_topic_dict[file]
+        Cit_Title_list = read_xml_obj.getCitationTitle()
+        Title_id = Title_dict[Title]
+        Author_list_id = [Author_dict[author] for author in Author_list]
+        Topic_list_id = [Topic_dict[topic] for topic in Topic_list]
+        Cit_Title_list_id = [Title_dict[cit_title] for cit_title in Cit_Title_list]
+        Paper_obj = Paper(Title_id,Author_list_id,Topic_list_id,Cit_Title_list_id)
+
+
 
 
 intermediate_output_file.close()
