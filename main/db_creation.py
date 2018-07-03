@@ -6,21 +6,24 @@ import math
 from collections import OrderedDict
 import spacy
 from textblob import TextBlob as tb
+import json
 
 from main.classFiles import Paper
 from main.read_xml import Read_XML
 
-filedir = os.getcwd()+ "/" + "files" + "/" + "archives/acl-arc-160301-parscit"
+filedir = os.getcwd()+ "/" + "files" + "/" + "A"
 unzipped_dir = os.getcwd()+ "/" + "files" + "/" + "unzipped"
 flattened_files_dir = os.getcwd()+ "/" + "files" + "/" + "flattened_unzipped"
-intermediate_output_file = open(os.getcwd()+ "/" + "files" + "/intermediate_output.txt",'w')
-Title_dict_pickle = open(os.getcwd()+ "/" + "files" + "/title_dict.pickle",'wb')
-Author_dict_pickle = open(os.getcwd()+ "/" + "files" + "/author_dict.pickle",'wb')
-Topic_dict_pickle = open(os.getcwd()+ "/" + "files" + "/topic_dict.pickle",'wb')
-Title_file_dict_pickle = open(os.getcwd()+ "/" + "files" + "/title_file_dict.pickle",'wb')
-File_topic_dict_pickle = open(os.getcwd()+ "/" + "files" + "/file_topic_dict.pickle",'wb')
+intermediate_output_file = open(os.getcwd()+ "/" + "files" + "/db_creation" + "/intermediate_output.txt",'w')
+paper_class_json_file = open(os.getcwd()+ "/" + "files" + "/db_creation" + "/final_paper_class.json",'w')
 
-intermediate_output_file.write("unextracted files:" + "/n")
+Title_dict_pickle = open(os.getcwd()+ "/" + "files" + "/db_creation" + "/title_dict.pickle",'wb')
+Author_dict_pickle = open(os.getcwd()+ "/" + "files" + "/db_creation" + "/author_dict.pickle",'wb')
+Topic_dict_pickle = open(os.getcwd()+ "/" + "files" + "/db_creation" + "/topic_dict.pickle",'wb')
+Title_file_dict_pickle = open(os.getcwd()+ "/" + "files" + "/db_creation" + "/title_file_dict.pickle",'wb')
+File_topic_dict_pickle = open(os.getcwd()+ "/" + "files" + "/db_creation" + "/file_topic_dict.pickle",'wb')
+
+intermediate_output_file.write("unextracted files:" + "\n")
 
 # Unzipping the file
 for file in os.listdir(filedir):
@@ -29,9 +32,9 @@ for file in os.listdir(filedir):
             try:
                t.extractall(unzipped_dir)
             except:
-                intermediate_output_file.write(filedir+"/"+file + "/n")
+                intermediate_output_file.write(filedir+"/"+file + "\n")
 
-intermediate_output_file.write("unflattened files:" + "/n")
+intermediate_output_file.write("unflattened files:" + "\n")
 
 # Flattening the unzipped directory structure so as to read individual files
 for dirpath, dirnames, filenames in os.walk(unzipped_dir):
@@ -40,7 +43,7 @@ for dirpath, dirnames, filenames in os.walk(unzipped_dir):
             os.rename(os.path.join(dirpath, filename), os.path.join(flattened_files_dir, filename))
             print(dirpath,dirnames,filename)
         except OSError:
-            intermediate_output_file.write("Could not move %s " % os.path.join(dirpath, filename) + "/n")
+            intermediate_output_file.write("Could not move %s " % os.path.join(dirpath, filename) + "\n")
 
 # Topic Extraction and forming file - topic dictionary
 File_topic_dict = {}
@@ -97,7 +100,7 @@ Author_dict = {}
 Topic_dict = {}
 Title_file_dict = {}
 
-intermediate_output_file.write("unparseable files:" + "/n")
+intermediate_output_file.write("unparseable files:" + "\n")
 
 Title_value = 0
 Author_value = 0
@@ -109,8 +112,12 @@ for file in os.listdir(flattened_files_dir):
         Title = read_xml_obj.getTitle()
         Author_list = read_xml_obj.getAuthors()
         Topic_list = File_topic_dict[file]
+        Cit_Title_list = read_xml_obj.getCitationTitle()
         Title_dict[Title] = Title_dict.get(Title,str(Title_value)+"Ti")                                 # Title dictionary creation
         Title_value = Title_value+1
+        for cit_title in Cit_Title_list:
+            Title_dict[cit_title] = Title_dict.get(Title,str(Title_value)+"Ti")                         # Adding citation title to title dict
+            Title_value = Title_value + 1
         for author in Author_list:
             Author_dict[author] = Author_dict.get(author,str(Author_value)+"Au")                        # Author dictionary creation
             Author_value = Author_value + 1
@@ -119,7 +126,7 @@ for file in os.listdir(flattened_files_dir):
             Topic_value = Topic_value + 1
         Title_file_dict[Title] = file
     else:
-        intermediate_output_file.write(flattened_files_dir + "/" + file + "/n")
+        intermediate_output_file.write(flattened_files_dir + "/" + file + "\n")
 
 pickle.dump(Title_dict,Title_dict_pickle)
 pickle.dump(Author_dict,Author_dict_pickle)
@@ -146,8 +153,9 @@ for file in os.listdir(flattened_files_dir):
         Topic_list_id = [Topic_dict[topic] for topic in Topic_list]
         Cit_Title_list_id = [Title_dict[cit_title] for cit_title in Cit_Title_list]
         Paper_obj = Paper(Title_id,Author_list_id,Topic_list_id,Cit_Title_list_id)
+        Paper_json = json.dumps(Paper_obj.__dict__)
+        paper_class_json_file.write(Paper_json + "\n")
 
 
-
-
+paper_class_json_file.close()
 intermediate_output_file.close()
