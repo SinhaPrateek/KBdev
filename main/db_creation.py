@@ -157,7 +157,7 @@ for file in os.listdir(flattened_files_dir):
         Cit_Title_list_id = [Title_dict[cit_title] for cit_title in Cit_Title_list]
         Paper_obj = Paper(Title_id,Author_list_id,Topic_list_id,Cit_Title_list_id)
         Paper_json = json.dumps(Paper_obj.__dict__)
-        paper_class_json_file.write(Paper_json + "\n")
+        paper_class_json_file.write(Paper_json + "\n")                 # save paper class to json file
 
 
 paper_class_json_file.close()
