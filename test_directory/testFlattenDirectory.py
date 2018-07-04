@@ -1,10 +1,10 @@
-import os, sys
+import os
 
-
-dir_to_flatten = os.getcwd()+"/"+"files/A"
+dir_to_flatten = os.getcwd()+"/"+"files/unzipped/A"
 dir_to_putfiles = os.getcwd() + "/files/Anew"
 
 """
+For the code to work Anew should already be existing before starting the code
 dirpath = parent directory to flatten
 dirnames = directory inside parent directory
 For first loop if folllowing directory is to be flattened /Users/aruneshn/PycharmProjects/Kbdev/src/files/A/A00/

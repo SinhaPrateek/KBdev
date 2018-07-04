@@ -11,6 +11,9 @@ import json
 from main.classFiles import Paper
 from main.read_xml import Read_XML
 
+# Create db_creation directory and falttened_unzipped directory in the respective locations before executing the code
+# Also the final directory for variable "filedir" in the below case is A, that is needed to be put up in line 43 for proper functioning of code
+
 filedir = os.getcwd()+ "/" + "files" + "/" + "A"
 unzipped_dir = os.getcwd()+ "/" + "files" + "/" + "unzipped"
 flattened_files_dir = os.getcwd()+ "/" + "files" + "/" + "flattened_unzipped"
@@ -37,7 +40,7 @@ for file in os.listdir(filedir):
 intermediate_output_file.write("unflattened files:" + "\n")
 
 # Flattening the unzipped directory structure so as to read individual files
-for dirpath, dirnames, filenames in os.walk(unzipped_dir):
+for dirpath, dirnames, filenames in os.walk(unzipped_dir + "/A"):
     for filename in filenames:
         try:
             os.rename(os.path.join(dirpath, filename), os.path.join(flattened_files_dir, filename))
@@ -87,7 +90,7 @@ for file in os.listdir(flattened_files_dir):
             for word in abstract_topic_blob.words:
                 score = score + tfidf(word, Abstract_blob, documents)
             chunk_score_dict[score] = abstract_topic.text
-        ordered_tfidfscore_topic_dict = OrderedDict(list(chunk_score_dict.items()).sort(reverse = True))    # order the keywords wrt tfidf scores in descesding order
+        ordered_tfidfscore_topic_dict = OrderedDict(sorted(chunk_score_dict.items(),reverse = True))    # order the keywords wrt tfidf scores in descesding order
         j = 0
         while j < n:                                                                                        # append top n tfidf scored keywords to topic list
             topic.append(list(ordered_tfidfscore_topic_dict.items())[j][1])
