@@ -8,8 +8,8 @@ import spacy
 from textblob import TextBlob as tb
 import json
 
-from main.classFiles import Paper
-from main.read_xml import Read_XML
+from poc1.main.classFiles import Paper
+from poc1.main.read_xml import Read_XML
 
 # Create db_creation directory and falttened_unzipped directory in the respective locations before executing the code
 # Also the final directory for variable "filedir" in the below case is A, that is needed to be put up in line 43 for proper functioning of code

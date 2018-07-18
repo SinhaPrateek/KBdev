@@ -1,4 +1,4 @@
-from main.classFiles import Paper
+from poc1.main.classFiles import Paper
 import json
 import os
 
