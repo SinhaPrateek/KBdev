@@ -119,7 +119,7 @@ for file in os.listdir(flattened_files_dir):
         Title_dict[Title] = Title_dict.get(Title,str(Title_value)+"Ti")                                 # Title dictionary creation
         Title_value = Title_value+1
         for cit_title in Cit_Title_list:
-            Title_dict[cit_title] = Title_dict.get(Title,str(Title_value)+"Ti")                         # Adding citation title to title dict
+            Title_dict[cit_title] = Title_dict.get(cit_title,str(Title_value)+"Ti")                         # Adding citation title to title dict
             Title_value = Title_value + 1
         for author in Author_list:
             Author_dict[author] = Author_dict.get(author,str(Author_value)+"Au")                        # Author dictionary creation
