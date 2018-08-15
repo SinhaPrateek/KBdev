@@ -23,23 +23,14 @@ for paper_class_json in paper_class_json_list:   #paper_class_json is for each p
 
     ####### create paper subgraph , since Au-T,Au-Au,T-T,Au-Ti,T-Ti are possble nodes,
     # so they were taken in one list. Then they will be added as nodes and edges can be geerated between all combination of these nodes at once
-    combinedList = Paper_obj.authors + Paper_obj.topics
-    combinedList.append(Paper_obj.title)
-    # print("full list" + str(combinedList))
-    paperSG = nx.complete_graph(combinedList)
-    # print("number of nodes is " + str(paperSG.number_of_nodes()) + " number of edges is " + str(paperSG.number_of_edges()) + "and edges are: " + str(list(paperSG.edges))  + "\n")
-
-    ######## adding Ti-Ci edges
-    # citations = Paper_obj.citpapers
-    # for citation in citations:
-    #     paperSG.add_edge(Paper_obj.title,citation)
-    #     print("After adding citations ,number of nodes is " + str(paperSG.number_of_nodes()) + " number of edges is " + str(paperSG.number_of_edges()) + "and edges are: " + str(list(paperSG.edges)))
-
-
+    paperSG = Paper_obj.create_subgraph()
+    ######### keep adding each paper subgraph to full graph
     fullGraph = nx.compose(fullGraph,paperSG)
-    print("number of nodes is " + str(fullGraph.number_of_nodes()) + " number of edges is " + str(fullGraph.number_of_edges()) + "and edges are: " + str(list(fullGraph.edges))  + "\n")
-    nx.write_gml(fullGraph, graph_file_gml) #gml(graph modelling language) format,recommended format for saving graph
-    nx.write_adjlist(fullGraph, graph_file_adj)  #saving in adjacency list format
+    # print("number of nodes is " + str(fullGraph.number_of_nodes()) + " number of edges is " + str(fullGraph.number_of_edges()) + " and edges are: " + str(list(fullGraph.edges))  + "\n")
+
+nx.write_gml(fullGraph, graph_file_gml)      #gml(graph modelling language) format,recommended format for saving graph
+nx.write_adjlist(fullGraph, graph_file_adj)  #saving in adjacency list format
+print("number of nodes in full graph is " + str(fullGraph.number_of_nodes()) + " number of edges is " + str(fullGraph.number_of_edges()) + " and edges are: " + str(list(fullGraph.edges))  + "\n")
 
 ################ to visualize the graph
 # nx.draw(fullGraph,with_labels=True, font_weight='bold')

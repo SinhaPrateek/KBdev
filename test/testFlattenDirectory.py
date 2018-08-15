@@ -2,7 +2,7 @@ import os
 
 dir_to_flatten = os.getcwd()+"/"+"files/unzipped/A"
 dir_to_putfiles = os.getcwd() + "/files/Anew"
-
+print(os.getcwd())
 """
 For the code to work Anew should already be existing before starting the code
 dirpath = parent directory to flatten

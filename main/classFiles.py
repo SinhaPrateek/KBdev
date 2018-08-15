@@ -1,3 +1,5 @@
+import networkx as nx
+
 class Author:
     def __init__(self,author_id,author_name):
         self.author_id = author_id
@@ -19,3 +21,23 @@ class Paper:
         self.authors = authors_id
         self.topics = topics_id
         self.citpapers = cit_paper_id
+
+    def create_subgraph(self):
+        ####### create paper subgraph , since Au-T,Au-Au,T-T,Au-Ti,T-Ti are possble nodes,
+        # so they were taken in one list. Then they will be added as nodes and edges can be geerated between all combination of these nodes at once
+        combinedList = self.authors + self.topics
+        combinedList.append(self.title)
+        # print("full list" + str(combinedList))
+        paperSG = nx.complete_graph(combinedList)
+        print("number of nodes is " + str(paperSG.number_of_nodes()) + " number of edges is " + str(paperSG.number_of_edges()) + " and edges are: " + str(list(paperSG.edges)) + "\n")
+
+        ######## adding Ti-Ci edges
+        # citations = Paper_obj.citpapers
+        # for citation in citations:
+        #     paperSG.add_edge(Paper_obj.title,citation)
+        #     print("After adding citations ,number of nodes is " + str(paperSG.number_of_nodes()) + " number of edges is " + str(paperSG.number_of_edges()) + "and edges are: " + str(list(paperSG.edges)))
+
+        return paperSG
+
+
+
