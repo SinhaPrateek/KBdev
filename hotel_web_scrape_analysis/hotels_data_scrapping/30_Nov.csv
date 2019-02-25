@@ -1,0 +1,251 @@
+Address,Date,Guest_review,Hotel_name,Max_price,Price,Star_rating
+"776 Boylston St,Boston,MA",30Nov,4.3,Mandarin Oriental Boston,"Rs45,722","Rs45,722",5 stars
+"70 Rowes Wharf,Boston,MA",30Nov,4.8,Boston Harbor Hotel,"Rs26,974","Rs24,202",5 stars
+"215 Charles St,Boston,MA",30Nov,4.5,"The Liberty, a Starwood Luxury Collection Hotel, Boston","Rs36,343","Rs16,189",5 stars
+"200 Boylston St,Boston,MA",30Nov,4.4,Four Seasons Hotel Boston,"Rs48,436","Rs42,585",5 stars
+"510 Atlantic Ave,Boston,MA",30Nov,4.6,InterContinental Boston,"Rs14,888","Rs14,888",5 stars
+"15 Beacon St,Boston,MA",30Nov,4.6,Fifteen Beacon,"Rs48,436","Rs34,370",5 stars
+"10 Avery St,Boston,MA",30Nov,4.2,"The Ritz-Carlton, Boston","Rs64,691","Rs38,034",5 stars
+"3 Battery Wharf,Boston,MA",30Nov,4.4,"Battery Wharf Hotel, Boston Waterfront","Rs14,888","Rs12,655",4.5 stars
+"138 Saint James Ave,Boston,MA",30Nov,4.6,"Fairmont Copley Plaza, Boston","Rs34,393","Rs29,234",4.5 stars
+"15 Arlington St,Boston,MA",30Nov,4.5,Taj Boston,"Rs16,189","Rs14,570",4.5 stars
+"61 Exeter Street,Boston,MA",30Nov,4.7,The Lenox Hotel Boston,"Rs41,935","Rs36,733",4.5 stars
+"250 Franklin St,Boston,MA",30Nov,4.7,"The Langham, Boston","Rs19,439","Rs17,496",4.5 stars
+"500 Commonwealth Ave,Boston,MA",30Nov,4.6,Hotel Commonwealth,"Rs24,641","Rs20,740",4.5 stars
+"One Bennett Street,Boston,MA",30Nov,4.5,The Charles Hotel,"Rs22,078","Rs19,809",4 stars
+"89 Broad St,Boston,MA",30Nov,4.3,Hilton Boston Downtown/Faneuil Hall,"Rs25,941","Rs16,839",4 stars
+"26 North St,Boston,MA",30Nov,4.5,The Bostonian Boston,"Rs22,177","Rs15,740",4 stars
+"40 Edwin H. Land Boulevard,Boston,MA",30Nov,4.5,Royal Sonesta Boston,"Rs25,397","Rs12,953",4 stars
+"606 Congress St,Boston,MA",30Nov,4.3,Renaissance Boston Waterfront Hotel,"Rs24,641","Rs11,313",4 stars
+"1 Court Street,Boston,MA",30Nov,4.3,"The Ames Boston Hotel, Curio Collection by Hilton","Rs42,656","Rs13,985",4 stars
+"70 Sleeper Street,Boston,MA",30Nov,4.4,"The Envoy Hotel, Autograph Collection","Rs30,493","Rs17,880",4 stars
+"100 Stuart Street,Boston,MA",30Nov,4.3,W Boston,"Rs15,529","Rs15,527",4 stars
+"101 S. Huntington Ave,Boston,MA",30Nov,4.2,Global Luxury Suites at Longwood Medical Area,"Rs9,426","Rs8,457",4 stars
+"1 Seaport Lane,Boston,MA",30Nov,4.7,Seaport Boston Hotel,"Rs20,415","Rs17,487",4 stars
+"39 Dalton St,Boston,MA",30Nov,4.2,Sheraton Boston Hotel,"Rs14,872","Rs14,871",4 stars
+"50 Park Plaza at Arlington Street,Boston,MA",30Nov,4.1,Boston Park Plaza,"Rs12,288","Rs11,059",4 stars
+"32 Garrison Street,Boston,MA",30Nov,3.9,Global Luxury Suites at Back Bay,"Rs13,221","Rs11,862",4 stars
+"4 Longfellow Place,Boston,MA",30Nov,4.7,Staniford St. Apartments By Stay Alfred,"Rs15,474","Rs15,474",4 stars
+"161 Devonshire St,Boston,MA",30Nov,4.1,Club Quarters Hotel in Boston,"Rs12,229","Rs12,229",4 stars
+"40 Dalton St,Boston,MA",30Nov,4.0,Hilton Boston Back Bay,"Rs38,944","Rs18,789",4 stars
+"One Avenue De Lafayette,Boston,MA",30Nov,4.4,Hyatt Regency Boston,"Rs37,644","Rs14,238",4 stars
+"180 Brookline Avenue,Boston,MA",30Nov,3.9,Global Luxury Suites at Fenway Park South,"Rs10,058","Rs9,025",4 stars
+"One Hotel Drive,Boston,MA",30Nov,4.1,Hilton Boston Logan Airport,"Rs13,978","Rs13,978",4 stars
+"370 Commonwealth Ave,Boston,MA",30Nov,4.6,The Eliot Hotel,"Rs21,780","Rs21,780",4 stars
+"9 Miner Street,Boston,MA",30Nov,4.1,Evolve Fenway Diamond,"Rs22,690","Rs19,287",4 stars
+"425 Summer St,Boston,MA",30Nov,4.4,The Westin Boston Waterfront,"Rs19,114","Rs19,113",4 stars
+"47 Huntington Ave,Boston,MA",30Nov,4.2,Copley Square Hotel,"Rs25,940","Rs19,455",4 stars
+"154 Berkeley Street,Boston,MA",30Nov,4.6,Loews Boston Hotel,"Rs31,792","Rs17,879",4 stars
+"575 Memorial Drive,Boston,MA",30Nov,4.0,"Hyatt Regency Cambridge, Overlooking Boston","Rs23,340","Rs10,337",4 stars
+"200 Stuart St,Boston,MA",30Nov,4.4,Revere Hotel Boston Common,"Rs17,489","Rs14,866",4 stars
+"101 Harborside Drive,Boston,MA",30Nov,4.4,Hyatt Regency Boston Harbor,"Rs18,139","Rs12,288",4 stars
+"155 Portland St,Boston,MA",30Nov,4.4,Kimpton Onyx Hotel,"Rs18,152","Rs18,150",4 stars
+"70 Third Avenue,Boston,MA",30Nov,4.1,The Westin Waltham-Boston,"Rs18,789","Rs15,539",4 stars
+"35 South Huntington Avenue,Boston,MA",30Nov,3.5,Global Luxury Suites at Mission Hill,"Rs8,160","Rs7,322",4 stars
+"101 Canal Street,Boston,MA",30Nov,4.8,Canal Street Apartments by Stay Alfred,"Rs15,474","Rs15,474",4 stars
+"296 State St,Boston,MA",30Nov,4.4,Boston Marriott Long Wharf,"Rs27,892","Rs19,440",4 stars
+"107 Merrimac St,Boston,MA",30Nov,4.4,The Boxer,"Rs17,489","Rs15,390",4 stars
+"50 Lewis Street,Boston,MA",30Nov,3.5,Evolve East Boston,"Rs12,938","Rs10,997",4 stars
+"90 Tremont St,Boston,MA",30Nov,4.6,Kimpton Nine Zero Hotel,"Rs29,842","Rs14,888",4 stars
+"Two Cambridge Center, 50 Broadway,Boston,MA",30Nov,4.3,Boston Marriott Cambridge,"Rs33,093","Rs17,100",4 stars
+"220 Alewife Brook Parkway,Boston,MA",30Nov,4.3,Freepoint,"Rs10,064","Rs8,824",4 stars
+"60 School St,Boston,MA",30Nov,4.2,Boston Omni Parker House Hotel,"Rs14,888","Rs14,888",4 stars
+"350 Third Street,Boston,MA",30Nov,3.8,Global Luxury Suites at Kendall West,"Rs10,058","Rs9,025",4 stars
+"250 Kendall Street,Boston,MA",30Nov,2.0,Global Luxury Suites at Kendall East,"Rs11,879","Rs10,658",4 stars
+"110 Huntington Ave,Boston,MA",30Nov,4.3,Boston Marriott Copley Place,"Rs25,291","Rs25,291",4 stars
+"10 Huntington Ave,Boston,MA",30Nov,4.4,"The Westin Copley Place, Boston","Rs42,195","Rs19,439",4 stars
+"660 Washington St,Boston,MA",30Nov,3.8,Washington St Apartment by Stay Alfred,"Rs12,938","Rs12,938",4 stars
+"505 Washington Street,Boston,MA",30Nov,4.6,The Godfrey Hotel Boston,"Rs13,985","Rs13,983",4 stars
+"25 Edwin H. Land Blvd,Boston,MA",30Nov,4.6,Kimpton Marlowe Hotel,"Rs14,511","Rs14,510",4 stars
+"2027 Massachusetts Ave,Boston,MA",30Nov,4.8,"The Inn at Hastings Park, Relais & Châteaux","Rs18,662","Rs16,744",4 stars
+"20 Sidney Street,Boston,MA",30Nov,4.3,Le Meridien Cambridge-MIT,"Rs11,881","Rs11,881",4 stars
+"198 West Brookline Street,Boston,MA",30Nov,5.0,Clarendon Square Bed & Breakfast,"Rs19,179","Rs12,873",4 stars
+"15 Middlesex Canal Park,Boston,MA",30Nov,4.3,Crowne Plaza Boston - Woburn,"Rs10,597","Rs9,037",3.5 stars
+"550 Winter Street,Boston,MA",30Nov,4.6,Embassy Suites Boston Waltham,"Rs12,767","Rs7,737",3.5 stars
+"21 Monument Street,Boston,MA",30Nov,4.8,North Bridge Inn,"Rs12,613","Rs12,613",3.5 stars
+"315 A Street,Boston,MA",30Nov,5.0,A Street Apartment By Stay Alfred,"Rs20,155","Rs20,155",3.5 stars
+"5 Blossom Street,Boston,MA",30Nov,3.9,Wyndham Boston Beacon Hill,"Rs18,789","Rs13,588",3.5 stars
+"32 Garrison Street,Boston,MA",30Nov,4.2,Garrison Street Apartment by Stay  Alfred,"Rs16,644","Rs14,693",3.5 stars
+"399 Grove St,Boston,MA",30Nov,4.1,Hotel Indigo Boston - Newton Riverside,"Rs12,288","Rs6,436",3.5 stars
+"207 Porter St,Boston,MA",30Nov,4.2,Embassy Suites Boston Logan Airport,"Rs12,938","Rs11,638",3.5 stars
+"58 Washington St,Boston,MA",30Nov,4.6,Harbor Light Inn,"Rs13,588","Rs13,588",3.5 stars
+"821 Washington Street,Boston,MA",30Nov,4.2,DoubleTree by Hilton Boston - Downtown,"Rs19,439","Rs12,938",3.5 stars
+"19 Banks Street St,Boston,MA",30Nov,2.9,The Cambridge Karma House,"Rs12,383","Rs12,383",3.5 stars
+"400 Soldiers Field Road,Boston,MA",30Nov,4.4,DoubleTree Suites by Hilton Hotel Boston - Cambridge,"Rs19,439","Rs7,737",3.5 stars
+"7 Summer St,Boston,MA",30Nov,4.1,The Salem Inn,"Rs10,467","Rs9,882",3.5 stars
+"2 Forbes Rd,Boston,MA",30Nov,4.1,Hilton Boston/Woburn,"Rs10,679","Rs8,728",3.5 stars
+"342 Longwood Ave,Boston,MA",30Nov,3.9,The Inn at Longwood Medical,"Rs13,588","Rs13,588",3.5 stars
+"225 Derby St,Boston,MA",30Nov,4.3,Salem Waterfront Hotel & Suites,"Rs8,766","Rs8,766",3.5 stars
+"10 Acorn Park Drive,Boston,MA",30Nov,4.5,AC Hotel by Marriott Boston Cambridge,"Rs17,490","Rs8,388",3.5 stars
+"100 Cabot St,Boston,MA",30Nov,4.0,Sheraton Needham Hotel,"Rs14,238","Rs8,234",3.5 stars
+"65 Seaport Blvd,Boston,MA",30Nov,4.2,YOTEL Boston,"Rs12,288","Rs12,288",3.5 stars
+"238 Andover St,Boston,MA",30Nov,4.3,TownePlace Suites by Marriott Boston North Shore/Danvers,"Rs7,087","Rs7,087",3.5 stars
+"18 Washington Square W,Boston,MA",30Nov,4.4,Hawthorne Hotel,"Rs8,477","Rs7,606",3.5 stars
+"25 Allied Drive,Boston,MA",30Nov,4.0,Hilton Boston/Dedham,"Rs11,638","Rs9,203",3.5 stars
+"50 Forbes Road,Boston,MA",30Nov,4.2,Hyatt Place Boston/Braintree,"Rs8,994","Rs8,274",3.5 stars
+"1 Remington St,Boston,MA",30Nov,4.5,Hotel Veritas,"Rs17,496","Rs10,727",3.5 stars
+"50 Ferncroft Rd,Boston,MA",30Nov,3.7,DoubleTree by Hilton Boston North Shore,"Rs10,988","Rs10,988",3.5 stars
+"1 Audubon Road,Boston,MA",30Nov,3.9,Four Points by Sheraton Wakefield Boston Htl&Conference Cntr,"Rs8,777","Rs8,777",3.5 stars
+"95 Station Landing,Boston,MA",30Nov,4.7,AC Hotel by Marriott Boston North,"Rs17,490","Rs11,963",3.5 stars
+"1125 Boston Providence Turnpike,Boston,MA",30Nov,4.4,Four Points By Sheraton Norwood,"Rs10,988","Rs7,682",3.5 stars
+"777 Memorial Dr,Boston,MA",30Nov,4.0,Courtyard by Marriott Boston-Cambridge,"Rs18,140","Rs9,362",3.5 stars
+"264 Pleasant Street,Boston,MA",30Nov,4.8,The Marblehead Inn,"Rs15,929","Rs13,978",3.5 stars
+"1271 Boylston St,Boston,MA",30Nov,4.5,The Verb Hotel,"Rs9,362","Rs9,362",3.5 stars
+"8A Centennial Drive,Boston,MA",30Nov,4.2,Boston Marriott Peabody,"Rs10,338","Rs9,688",3.5 stars
+"660 Washington St.,Boston,MA",30Nov,3.8,Global Luxury Suites at China Town,"Rs11,597","Rs10,405",3.5 stars
+"One Burlington Mall Road,Boston,MA",30Nov,4.4,Boston Marriott Burlington,"Rs15,994","Rs9,882",3.5 stars
+"241 Hanover Street,Boston,MA",30Nov,4.3,Bricco Suites,"Rs10,978","Rs9,043",3.5 stars
+"1000 Marriot Dr,Boston,MA",30Nov,4.2,Boston Marriott Quincy,"Rs13,199","Rs13,199",3.5 stars
+"320 Washington Street,Boston,MA",30Nov,3.7,Crowne Plaza Boston - Newton,"Rs10,988","Rs7,282",3.5 stars
+"2345 Commonwealth Avenue,Boston,MA",30Nov,4.0,Boston Marriott Newton,"Rs12,743","Rs10,832",3.5 stars
+"1834 Revere Beach Pkwy,Boston,MA",30Nov,4.5,"enVision Hotel Boston - Everett, an Ascend Collection Member","Rs7,129","Rs7,129",3.5 stars
+"44 Middlesex Tpke,Boston,MA",30Nov,4.4,DoubleTree by Hilton Boston - Bedford Glen,"Rs14,238","Rs8,790",3.5 stars
+"350 Third Street,Boston,MA",30Nov,3.5,Apartments in Watermark Kendall by LYX,"Rs16,189","Rs14,442",3.5 stars
+"275 Tremont St,Boston,MA",30Nov,4.0,Courtyard by Marriott Boston Downtown,"Rs27,892","Rs14,889",3.5 stars
+"88 Exeter St,Boston,MA",30Nov,4.2,Courtyard by Marriott Boston Copley Square,"Rs28,542","Rs17,424",3 stars
+"315 Mishawum Rd,Boston,MA",30Nov,4.1,Holiday Inn Express Boston North-Woburn,"Rs9,102","Rs8,582",3 stars
+"48 Monument Square,Boston,MA",30Nov,4.2,Concord's Colonial Inn,"Rs16,839","Rs9,397",3 stars
+"295 Hale Street,Boston,MA",30Nov,4.0,The Wylie Inn and Conference Center at Endicott College,"Rs7,551","Rs6,004",3 stars
+"655 Boylston St,Boston,MA",30Nov,4.2,Charlesmark Hotel,"Rs16,015","Rs11,919",3 stars
+"85 American Legion Hwy,Boston,MA",30Nov,4.3,Comfort Inn & Suites Logan International Airport,"Rs19,439","Rs7,548",3 stars
+"11 Old Concord Rd,Boston,MA",30Nov,4.5,Sonesta ES Suites Burlington Boston,"Rs13,588","Rs10,337",3 stars
+"300 River Ridge Dr,Boston,MA",30Nov,4.2,Courtyard by Marriott Boston Norwood/Canton,"Rs10,662","Rs8,388",3 stars
+"200 Technology Center Dr,Boston,MA",30Nov,4.3,Courtyard by Marriott Boston Stoughton,"Rs9,038","Rs8,388",3 stars
+"1200 Beacon St,Boston,MA",30Nov,3.3,Holiday Inn Boston-Brookline,"Rs26,591","Rs19,309",3 stars
+"239 W Newton St,Boston,MA",30Nov,3.7,Copley House,"Rs11,053","Rs10,402",3 stars
+"280 Friend Street,Boston,MA",30Nov,3.9,Holiday Inn Express Hotel & Suites Boston Garden,"Rs23,991","Rs12,288",3 stars
+"125 Brookline Ave,Boston,MA",30Nov,4.6,Residence Inn by Marriott Boston Back Bay/Fenway,"Rs16,710","Rs13,368",3 stars
+"270 Concord Rd,Boston,MA",30Nov,4.2,Courtyard by Marriott Boston Billerica/Bedford,"Rs14,239","Rs11,638",3 stars
+"645 Beacon St,Boston,MA",30Nov,3.9,Boston Hotel Buckminster,"Rs21,390","Rs11,702",3 stars
+"185 State St,Boston,MA",30Nov,4.2,Harborside Inn Of Boston,"Rs17,710","Rs13,181",3 stars
+"287 Crescent Street,Boston,MA",30Nov,4.5,Crescent Suites Hotel,"Rs13,328","Rs11,919",3 stars
+"140 Clarendon St,Boston,MA",30Nov,3.9,Hotel 140,"Rs23,991","Rs13,181",3 stars
+"55 Ariadne Rd,Boston,MA",30Nov,3.7,Holiday Inn Boston - Dedham Hotel & Conference Center,"Rs7,737","Rs5,851",3 stars
+"1374 N Main Street,Boston,MA",30Nov,3.7,Comfort Inn Randolph-Boston,"Rs7,087","Rs7,087",3 stars
+"1 Newbury St,Boston,MA",30Nov,3.7,Holiday Inn Hotel & Suites Boston - Peabody,"Rs7,087","Rs5,786",3 stars
+"30 Washington Street,Boston,MA",30Nov,4.2,Holiday Inn Boston Bunker Hill Area,"Rs9,427","Rs8,013",3 stars
+"30 Eastern Avenue,Boston,MA",30Nov,4.6,TownePlace Suites Boston Logan Airport/Chelsea,"Rs11,963","Rs9,038",3 stars
+"2 Van De Graaff Dr,Boston,MA",30Nov,4.6,HYATT house Boston/Burlington,"Rs16,615","Rs11,056",3 stars
+"43 Newbury St./Route 1 North,Boston,MA",30Nov,4.5,SpringHill Suites by Marriott Boston Peabody,"Rs8,388","Rs7,152",3 stars
+"261 Newbury St,Boston,MA",30Nov,4.5,Newbury Guest House,"Rs15,072","Rs15,072",3 stars
+"64 University Avenue,Boston,MA",30Nov,4.8,Courtyard by Marriott Boston Dedham/Westwood,"Rs7,672","Rs7,672",3 stars
+"50 Amory Street (unit 2),Boston,MA",30Nov,3.9,Chez Pat in Cambridge,"Rs10,406","Rs10,406",3 stars
+"225 William F. McClellan Highway,Boston,MA",30Nov,4.0,Courtyard by Marriott Boston Logan Airport,"Rs15,539","Rs9,362",3 stars
+"400 District Avenue,Boston,MA",30Nov,5.0,Residence Inn by Marriott Boston Burlington,"Rs10,988","Rs10,988",3 stars
+"225 Norwood Park S,Boston,MA",30Nov,4.5,Holiday Inn Express & Suites Norwood-Boston Area,"Rs8,777","Rs7,022",3 stars
+"5 Wheeler Rd,Boston,MA",30Nov,4.3,Hilton Garden Inn Boston/Burlington,"Rs13,588","Rs8,137",3 stars
+"387 Winter St,Boston,MA",30Nov,4.4,Courtyard by Marriott Boston Waltham,"Rs17,490","Rs9,298",3 stars
+"145 Beech St,Boston,MA",30Nov,4.6,Homewood Suites by Hilton Boston Logan Airport Chelsea,"Rs8,234","Rs8,234",3 stars
+"40 Webster St,Boston,MA",30Nov,4.0,Courtyard by Marriott Boston Brookline,"Rs11,573","Rs11,572",3 stars
+"215 Monsignor O'Brien Highway,Boston,MA",30Nov,4.5,Fairfield Inn & Suites Boston Cambridge,"Rs14,563","Rs9,362",3 stars
+"116 Riverside Ave,Boston,MA",30Nov,4.1,Hyatt Place Boston/Medford,"Rs16,189","Rs9,203",3 stars
+"201 Everett Ave,Boston,MA",30Nov,3.6,Doubletree By Hilton Boston Logan Airport Chelsea,"Rs12,288","Rs10,337",3 stars
+"700 Unicorn Park Dr,Boston,MA",30Nov,4.4,Courtyard by Marriott Woburn/Boston North,"Rs8,258","Rs8,051",3 stars
+"200 Maple St,Boston,MA",30Nov,4.6,Residence Inn Boston Logan Airport/Chelsea,"Rs18,140","Rs9,362",3 stars
+"100 Sargent Street,Boston,MA",30Nov,4.1,Château sur Mer Bed & Breakfast,"Rs7,477","Rs6,827",3 stars
+"35 Middlesex Turnpike,Boston,MA",30Nov,4.4,Homewood Suites by Hilton Boston/Billerica,"Rs10,445","Rs8,270",3 stars
+"811 Massachusetts Ave,Boston,MA",30Nov,4.0,Hampton Inn & Suites Boston Crosstown Center,"Rs8,525","Rs8,525",3 stars
+"34-44 Charles River Ave,Boston,MA",30Nov,4.4,Residence Inn by Marriott Boston Harbor on Tudor Wharf,"Rs18,204","Rs18,204",3 stars
+"370 Congress St,Boston,MA",30Nov,4.6,Residence Inn by Marriott Boston Downtown/Seaport,"Rs29,843","Rs15,214",3 stars
+"391-395 D Street,Boston,MA",30Nov,4.5,Element Boston Seaport by Westin,"Rs20,415","Rs16,189",3 stars
+"401-403 D Street,Boston,MA",30Nov,4.2,Aloft Boston Seaport,"Rs19,439","Rs14,238",3 stars
+"148 Washington Street,Boston,MA",30Nov,4.9,The Merchant,"Rs11,638","Rs11,638",3 stars
+"727 Marrett Road - A,Boston,MA",30Nov,4.2,Aloft Lexington,"Rs13,588","Rs9,687",3 stars
+"6 Cambridge Ctr,Boston,MA",30Nov,4.4,Residence Inn by Marriott Boston Cambridge,"Rs25,942","Rs20,089",3 stars
+"215 Wood Rd,Boston,MA",30Nov,4.3,Hampton Inn Boston/Braintree,"Rs10,988","Rs9,203",3 stars
+"1650 Commonwealth Ave,Boston,MA",30Nov,3.3,Hotel Boston,"Rs10,337","Rs7,236",3 stars
+"259 Elm St,Boston,MA",30Nov,4.2,Residence Inn Dedham,"Rs14,889","Rs8,258",3 stars
+"407 Squire Rd,Boston,MA",30Nov,3.8,Four Points by Sheraton Boston Logan Airport Revere,"Rs12,938","Rs9,037",3 stars
+"24 Irving Street,Boston,MA",30Nov,4.0,Irving House At Harvard,"Rs12,678","Rs12,678",3 stars
+"434 Providence Hwy,Boston,MA",30Nov,4.4,Hampton Inn Boston - Norwood,"Rs8,387","Rs6,024",3 stars
+"51 Newbury St,Boston,MA",30Nov,4.4,Residence Inn by Marriott Boston North Shore/Danvers,"Rs9,038","Rs8,388",3 stars
+"1750 Beacon Street,Boston,MA",30Nov,3.6,Beacon Inn 1750,"Rs10,302","Rs6,461",3 stars
+"63 R Boston St,Boston,MA",30Nov,4.2,Courtyard by Marriott Boston-South Boston,"Rs23,340","Rs8,778",3 stars
+"727 Marrett Road - B,Boston,MA",30Nov,4.4,Element Lexington,"Rs12,288","Rs10,337",3 stars
+"100 Boardman St,Boston,MA",30Nov,4.5,Hilton Garden Inn Boston Logan Airport,"Rs12,938","Rs10,988",3 stars
+"80 B Street,Boston,MA",30Nov,4.6,Residence Inn Boston Needham,"Rs11,638","Rs8,388",3 stars
+"275 Norwood Park S,Boston,MA",30Nov,4.4,Residence Inn by Marriott Boston Norwood,"Rs10,988","Rs9,038",3 stars
+"1 Massachusetts Ave,Boston,MA",30Nov,4.3,Homewood Suites by Hilton Boston/Cambridge-Arlington,"Rs15,539","Rs9,037",3 stars
+"54 4th Ave,Boston,MA",30Nov,4.3,HYATT house Boston/Waltham,"Rs14,570","Rs9,304",3 stars
+"100 Morris Street,Boston,MA",30Nov,3.9,Quality Inn,"Rs4,889","Rs4,889",3 stars
+"180 Forbes Road,Boston,MA",30Nov,4.8,Residence Inn by Marriott Boston Braintree,"Rs8,767","Rs8,767",3 stars
+"6 Prentiss St.,Boston,MA",30Nov,4.5,Mary Prentiss Inn,"Rs13,181","Rs13,181",3 stars
+"230 Lee Burbank Hwy,Boston,MA",30Nov,4.1,Hampton Inn Boston - Logan Airport,"Rs13,588","Rs6,576",3 stars
+"45 Hull Shore Drive,Boston,MA",30Nov,4.3,Nantasket Beach Resort,"Rs4,730","Rs4,730",3 stars
+"570 Arsenal Street,Boston,MA",30Nov,4.8,Residence Inn by Marriott Boston Watertown,"Rs16,840","Rs9,558",3 stars
+"450 Totten Pond Rd,Boston,MA",30Nov,4.2,Hilton Garden Inn Boston/Waltham,"Rs8,787","Rs7,908",3 stars
+"2218 Massachussets Avenue,Boston,MA",30Nov,4.2,A Cambridge House Inn at Porter,"Rs10,337","Rs9,397",3 stars
+"23 Cummings St,Boston,MA",30Nov,3.7,La Quinta Inn & Suites Boston-Somerville,"Rs8,128","Rs6,908",3 stars
+"240 Mishawum Rd,Boston,MA",30Nov,4.3,Courtyard by Marriott Boston Woburn/Burlington,"Rs16,840","Rs9,362",3 stars
+"929 Hingham St,Boston,MA",30Nov,3.9,DoubleTree by Hilton Boston-Rockland,"Rs12,288","Rs10,445",3 stars
+"130 Grovers Ave.,Boston,MA",30Nov,4.3,The Winthrop Arms Hotel,"Rs8,598","Rs8,598",3 stars
+"275 Independence Way,Boston,MA",30Nov,4.2,Courtyard Boston Danvers,"Rs8,388","Rs7,412",3 stars
+"1924 Massachusetts Avenue,Boston,MA",30Nov,4.4,Porter Square Hotel,"Rs11,739","Rs11,738",3 stars
+"380 Winter Street,Boston,MA",30Nov,4.1,Best Western TLC Hotel,"Rs11,638","Rs6,436",3 stars
+"312 Shirley Street,Boston,MA",30Nov,4.4,Winthrop Beach Inn and Suites,"Rs13,588","Rs6,243",3 stars
+"900 William T Morrissey Blvd,Boston,MA",30Nov,3.6,Comfort Inn Boston,"Rs15,214","Rs6,378",3 stars
+"240 Mount Vernon Street,Boston,MA",30Nov,4.1,DoubleTree Club by Hilton Boston Bayside,"Rs16,579","Rs7,737",3 stars
+"300 Presidential Way,Boston,MA",30Nov,4.5,Residence Inn by Marriott Boston Woburn,"Rs11,897","Rs9,298",3 stars
+"350 Main Street,Boston,MA",30Nov,4.7,The Kendall Hotel,"Rs24,056","Rs16,712",3 stars
+"111 Boylston Street,Boston,MA",30Nov,4.5,Homewood Suites by Hilton Boston Brookline-Longwood Medical,"Rs23,340","Rs10,337",3 stars
+"57 Newbury St,Boston,MA",30Nov,4.3,Homewood Suites by Hilton Boston-Peabody,"Rs8,387","Rs6,732",3 stars
+"52 Salisbury St.,Boston,MA",30Nov,4.6,The Beacon Luxury Waterfront Inn,"Rs9,687","Rs5,786",3 stars
+"87 Commercial Wharf,Boston,MA",30Nov,4.9,Boston Yacht Haven Inn & Marina,"Rs30,882","Rs16,254",3 stars
+"50 Royall St,Boston,MA",30Nov,4.7,"Homewood Suites by Hilton Boston/Canton, MA","Rs10,988","Rs9,687",3 stars
+"25 Charles Street,Boston,MA",30Nov,4.3,Beacon Hill Hotel & Bistro,"Rs14,888","Rs14,888",3 stars
+"52 4th Ave,Boston,MA",30Nov,2.7,Extended Stay America - Boston - Waltham - 52 4th Ave,"Rs8,539","Rs7,662",2.5 stars
+"831 Main St,Boston,MA",30Nov,3.5,Extended Stay America - Boston - Woburn,"Rs6,325","Rs5,675",2.5 stars
+"395 Old Post Rd,Boston,MA",30Nov,3.8,Best Western Plus The Inn at Sharon/Foxboro,"Rs5,471","Rs5,471",2.5 stars
+"115 Nantasket Ave,Boston,MA",30Nov,4.5,Nantasket Hotel at the Beach,"Rs5,201","Rs4,681",2.5 stars
+"44 Commonwealth Avenue,Boston,MA",30Nov,4.5,The College Club of Boston,"Rs12,545","Rs10,614",2.5 stars
+"25 Middlesex Turnpike,Boston,MA",30Nov,4.5,Hampton Inn Boston Bedford Burlington,"Rs11,638","Rs10,337",2.5 stars
+"59 Newbury St,Boston,MA",30Nov,4.1,Hampton Inn Boston/Peabody,"Rs7,737","Rs6,085",2.5 stars
+"50 Dayton St,Boston,MA",30Nov,4.4,Best Western Plus North Shore Hotel,"Rs6,085","Rs6,085",2.5 stars
+"449 Page Street,Boston,MA",30Nov,4.6,Hampton Inn & Suites Boston/Stoughton,"Rs6,378","Rs6,378",2.5 stars
+"19 Commerce Way,Boston,MA",30Nov,3.5,Red Roof PLUS+ Boston - Woburn,"Rs6,827","Rs6,144",2.5 stars
+"32 4th Ave,Boston,MA",30Nov,2.8,Extended Stay America - Boston - Waltham - 32 4th Ave,"Rs7,476","Rs6,728",2.5 stars
+"17-19 Littell Road,Boston,MA",30Nov,4.1,Coolidge Corner Guest House,"Rs10,337","Rs8,135",2.5 stars
+"1087 Beacon St,Boston,MA",30Nov,3.5,Beacon Inn 1087,"Rs8,440","Rs6,461",2.5 stars
+"235 Elm Street,Boston,MA",30Nov,3.5,Fairfield Inn by Marriott Boston Dedham,"Rs7,998","Rs6,046",2.5 stars
+"340 Great Road,Boston,MA",30Nov,3.2,Bedford Plaza Hotel - Boston,"Rs6,263","Rs5,619",2.5 stars
+"190 Wood Road,Boston,MA",30Nov,4.1,Beantown Inn,"Rs8,766","Rs8,766",2.5 stars
+"26 Chandler St,Boston,MA",30Nov,3.8,Chandler Inn Hotel,"Rs20,090","Rs11,289",2.5 stars
+"285 Mishawum Rd,Boston,MA",30Nov,3.9,Fairfield Inn by Marriott Boston Woburn-Burlington,"Rs8,388","Rs5,787",2.5 stars
+"800 Morrissey Blvd,Boston,MA",30Nov,3.2,Ramada Inn Boston,"Rs12,938","Rs7,151",2.5 stars
+"850 Hingham St,Boston,MA",30Nov,3.9,Comfort Inn Rockland - Boston,"Rs9,687","Rs6,300",2.5 stars
+"220 Huntington Ave,Boston,MA",30Nov,3.6,The Midtown Hotel,"Rs16,334","Rs16,334",2.5 stars
+"22 Edgerly Road,Boston,MA",30Nov,4.0,Oasis Guest House,"Rs10,613","Rs9,985",2.5 stars
+"440 Bedford St,Boston,MA",30Nov,3.2,Quality Inn & Suites Lexington,"Rs5,793","Rs5,793",2.5 stars
+"909 Hingham St,Boston,MA",30Nov,3.9,Best Western Rockland,"Rs6,576","Rs6,576",2.5 stars
+"250 Monsignor O'Brien Hwy,Boston,MA",30Nov,4.2,Holiday Inn Express Hotel and Suites Cambridge,"Rs16,644","Rs11,118",2.5 stars
+"920 Broadway,Boston,MA",30Nov,3.8,Red Roof PLUS+ Boston - Logan,"Rs6,827","Rs6,144",2.5 stars
+"69 Boston St,Boston,MA",30Nov,4.1,Holiday Inn Express Boston,"Rs22,690","Rs8,712",2.5 stars
+"319 Speen St,Boston,MA",30Nov,4.2,Hampton Inn Boston Natick,"Rs11,638","Rs8,133",2.5 stars
+"1800 Soldiers Field Road,Boston,MA",30Nov,3.2,Charles River Motel,"Rs6,263","Rs5,619",2.5 stars
+"130 Middlesex Tpke,Boston,MA",30Nov,4.0,Candlewood Suites Boston-Burlington,"Rs6,176","Rs6,176",2.5 stars
+"29 Hancock St,Boston,MA",30Nov,3.6,Best Western Adams Inn Quincy-Boston,"Rs12,938","Rs6,236",2.5 stars
+"14 Hill St,Boston,MA",30Nov,4.1,Comfort Inn Woburn,"Rs5,471","Rs5,471",2.5 stars
+"1 Rainin Road,Boston,MA",30Nov,3.6,Best Western Plus New Englander,"Rs5,471","Rs5,471",2.5 stars
+"999 Broadway,Boston,MA",30Nov,3.9,Holiday Inn Express Saugus (Logan Airport),"Rs7,087","Rs5,669",2.5 stars
+"78 Charles Street South,Boston,MA",30Nov,3.3,Found Hotel Boston Common,"Rs9,304","Rs9,304",2.5 stars
+"39 Court Street,Boston,MA",30Nov,4.1,French Welcome,"Rs5,526","Rs5,526",2.5 stars
+"191 Monsignor O'Brien Highway,Boston,MA",30Nov,4.2,Hampton Inn by Hilton Boston/Cambridge,"Rs22,040","Rs9,687",2.5 stars
+"62-64 Amory Street,Boston,MA",30Nov,3.4,Amory Guest House,"Rs7,802","Rs5,981",2.5 stars
+"235 Wood Rd,Boston,MA",30Nov,4.0,Candlewood Suites Boston-Braintree,"Rs9,101","Rs6,891",2.5 stars
+"20 Rockdale St,Boston,MA",30Nov,3.0,Extended Stay America Boston - Braintree,"Rs7,907","Rs7,094",2.5 stars
+"56 Berkeley St,Boston,MA",30Nov,4.5,Chandler Studios Boston,"Rs22,040","Rs16,334",2.5 stars
+"200 Jubilee Dr,Boston,MA",30Nov,3.1,Extended Stay America - Boston - Peabody,"Rs7,476","Rs6,728",2.5 stars
+"81 S Huntington Ave,Boston,MA",30Nov,4.3,"enVision Hotel Boston Longwood, an Ascend Collection Member","Rs18,139","Rs12,288",2.5 stars
+"891 Massachusetts Ave,Boston,MA",30Nov,3.6,Best Western Plus Boston Hotel,"Rs19,374","Rs8,234",2.5 stars
+"40 South Ave,Boston,MA",30Nov,2.7,Extended Stay America - Boston - Burlington,"Rs6,958","Rs6,243",2.5 stars
+"40 Bridge Street,Boston,MA",30Nov,3.7,Clipper Ship Inn,"Rs9,102","Rs7,568",2 stars
+"19 Stuart Street,Boston,MA",30Nov,4.4,HI Boston,"Rs11,670","Rs11,670",2 stars
+"845 Hancock St,Boston,MA",30Nov,4.2,Howard Johnson Quincy,"Rs8,777","Rs5,803",2 stars
+"775 Providence Highway,Boston,MA",30Nov,3.0,Econo Lodge Sharon,"Rs5,526","Rs5,526",2 stars
+"30 North Road,Boston,MA",30Nov,3.1,Bedford Motel,"Rs4,982","Rs4,982",2 stars
+"110 Mount Auburn Street,Boston,MA",30Nov,3.9,Harvard Square Hotel,"Rs14,442","Rs14,442",2 stars
+"219 Newbury Street,Boston,MA",30Nov,3.1,Knights Inn Danvers,"Rs4,811","Rs4,486",2 stars
+"150 3rd Ave,Boston,MA",30Nov,3.1,The Constitution Inn,"Rs10,151","Rs6,016",2 stars
+"125 Newbury Street,Boston,MA",30Nov,2.6,Plaza Inn,"Rs7,087","Rs4,226",2 stars
+"595 North Ave,Boston,MA",30Nov,3.4,Lakeside Inn,"Rs5,702","Rs4,824",2 stars
+"309 American Legion Hwy., Route 60 West,Boston,MA",30Nov,3.0,Rodeway Inn Logan International Airport,"Rs5,786","Rs5,786",2 stars
