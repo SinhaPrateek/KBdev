@@ -1,6 +1,5 @@
 # KBdev
 
-## Knowledge Graphs Creation and KG Based Deep Learning
 ### NLP, Named Entity Recognition, tf-idf, XML parsing, Python Libraries: Spacy, Networkx
 Developed a Knowledge Graph out of data from ACL Anthology, a database of research papers on NLP
 1. I parsed the paper XMLs to extract relevant information such as paper title, author, abstract, citations.
